@@ -1,0 +1,334 @@
+:root {
+  --color-primary: #732dff;
+  --color-secondary: ;
+
+  --color-primary-lightest: #f1eaff;
+  --color-primary-light: #d6d4ff;
+  --color-primary-med: #c7abff;
+  --color-primary-med-dark: #8f57ff;
+  --color-primary-dark: #511fb3;
+
+  --color-light-gray: #999;
+  --color-med-gray: #666;
+  --color-dark-gray: #333;
+  --color-darkest-gray: #222;
+
+  --color-white: #fff;
+
+  --mar-bot-small: 0.8rem;
+  --mar-bot-med: 2.4rem;
+
+  --pad-top-navbar: 4rem;
+
+  --transition-4: all 0.4s;
+  --transition-6: all 0.6s;
+
+  --slide-in-animation: 0.8s ease-out 1 forwards;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--font-color);
+  background-color: var(--main-background);
+  transition: background-color 0.6s, color 1s;
+  overflow-x: hidden;
+
+  padding-bottom: 20rem;
+}
+
+/* ***************************************************************** */
+/* General */
+/* ***************************************************************** */
+.light-theme {
+  --main-background: var(--color-white);
+  --primary-color-background: var(--color-primary-light);
+  --primary-color-border: var(--color-primary);
+  --font-color: var(--color-darkest-gray);
+}
+
+.dark-theme {
+  --main-background: var(--color-dark-gray);
+  --primary-color-background: var(--color-primary-med-dark);
+  --primary-color-border: var(--color-primary-dark);
+  --font-color: var(--color-white);
+}
+
+.primary-heading {
+  font-size: 6.4rem;
+}
+
+.secondary-heading {
+  font-size: 4.8rem;
+}
+
+.tertiary-heading {
+  font-size: 3.2rem;
+}
+
+.sub-heading {
+  font-size: 2.4rem;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+/* ***************************************************************** */
+/* Header */
+/* ***************************************************************** */
+#header {
+  height: 4.8rem;
+}
+
+.header__container {
+  background-color: var(--primary-color-background);
+  padding-top: 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  transition: all 0.2s linear;
+}
+
+.header-shrink {
+  padding-top: 1rem;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.075);
+}
+
+.nav {
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 0 4rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.nav__mode-box {
+  display: flex;
+  gap: 1.2rem;
+  justify-self: center;
+}
+
+.nav__mode-icon {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.nav__mode-icon:hover {
+  opacity: 1;
+}
+
+.nav__input {
+  display: none;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1.2rem;
+  justify-self: end;
+}
+
+.btn__nav--text {
+  font-size: 2rem;
+}
+
+/* ***************************************************************** */
+/* Landing */
+/* ***************************************************************** */
+#landing {
+  padding-top: 6rem;
+}
+.landing__container {
+  max-width: 80rem;
+  margin: 0 auto;
+  margin-bottom: 16rem;
+}
+
+.image {
+  font-size: 2.8rem;
+}
+
+/* ***************************************************************** */
+/* About */
+/* ***************************************************************** */
+#about {
+  padding-top: var(--pad-top-navbar);
+}
+
+/* ***************************************************************** */
+/* Projects */
+/* ***************************************************************** */
+#projects {
+  padding-top: var(--pad-top-navbar);
+}
+.projects__container {
+  display: flex;
+  flex-direction: column;
+  gap: 18rem;
+}
+.project__box {
+  position: relative;
+  display: grid;
+  align-content: center;
+  gap: 6.4rem;
+  width: 85%;
+  background-color: var(--primary-color-background);
+  padding: 6rem 0;
+  /* +++++++++  */
+  opacity: 1;
+}
+
+.project__box--left {
+  grid-template-columns: 55fr 45fr;
+  padding-left: 12rem;
+  padding-right: 16rem;
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+}
+
+/* .project__box--left::before {
+	content: '';
+	position: fixed;
+	top: -25rem;
+	left: -6rem;
+	height: 30rem;
+	width: 30rem;
+	background-color: var(--color-primary-light);
+	clip-path: circle(50% at 50% 50%);
+	z-index: -1;
+ }
+ 
+ .project__box--left::after {
+	content: '';
+	position: fixed;
+	top: 40rem;
+	left: -6rem;
+	height: 30rem;
+	width: 30rem;
+	background-color: var(--color-primary-light);
+	clip-path: circle(50% at 50% 50%);
+	z-index: -1;
+ } */
+
+.project__box--right {
+  position: relative;
+  grid-template-columns: 45fr 55fr;
+  right: -15%;
+  padding-left: 16rem;
+  padding-right: 12rem;
+  border-top-left-radius: 500px;
+  border-bottom-left-radius: 500px;
+}
+
+/* .project__box--text {
+ } */
+
+.project__heading {
+  margin-bottom: var(--mar-bot-small);
+}
+
+.project-description {
+  font-size: 1.8rem;
+  margin-bottom: var(--mar-bot-med);
+}
+
+.project__box__links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.btn__project {
+  font-size: 1.6rem;
+  border: 2px solid var(--primary-color-border);
+  border-radius: 5px;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+}
+
+.project__img__wrapper {
+  height: 100%;
+}
+
+.project__img {
+  width: 100%;
+}
+
+/* Project box animation */
+.project__box.left-scrolled {
+  opacity: 1;
+  animation: slideInLeft var(--slide-in-animation);
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+
+.project__box.right-scrolled {
+  opacity: 1;
+  animation: slideInRight var(--slide-in-animation);
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+/* ***************************************************************** */
+/* Contact */
+/* ***************************************************************** */
+#contact {
+  padding-top: var(--pad-top-navbar);
+}
+
+.contact__container {
+  padding-bottom: 4.8rem;
+}
+
+/* ***************************************************************** */
+/* Footer */
+/* ***************************************************************** */
+.footer__container {
+  background-color: var(--color-primary-light);
+  text-align: center;
+  padding: 3rem 0 2rem 0;
+}
+
+.footer__link {
+  font-size: 1.6rem;
+}

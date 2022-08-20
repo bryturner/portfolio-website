@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Bryan Turner Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="light-theme">
+    <header id="header">
+      <div class="header__container">
+        <nav class="nav">
+          <a href="#" class="btn btn__nav--text link-scroll">Bryan Turner</a>
+          <div class="nav__mode-box">
+            <label
+              class="nav__mode-label toggle-label"
+              for="toggle-mode-checkbox"
+              ><img src="/img/mode-icon-black.svg" class="nav__mode-icon"
+            /></label>
+            <input
+              type="checkbox"
+              class="nav__input"
+              id="toggle-mode-checkbox"
+            />
+          </div>
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="#about" class="btn btn__nav--text link-scroll"
+                >About Me</a
+              >
+            </li>
+            <li class="nav__list-item">
+              <a href="#projects" class="btn btn__nav--text link-scroll"
+                >Projects</a
+              >
+            </li>
+            <li class="nav__list-item">
+              <a href="#contact" class="btn btn__nav--text link-scroll"
+                >Contact</a
+              >
+            </li>
+            <li class="nav__list-item">
+              <a
+                href="/documents/Bryan_Turner_Resume_2-27 .pdf"
+                class="btn btn__nav--text"
+                target="_blank"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section id="landing">
+        <div class="landing__container">
+          <div class="landing__heading-text">
+            <h1 class="primary-heading">Hi, my name is Bryan Turner</h1>
+            <p class="sub-heading">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+              reiciendis quidem suscipit, porro dignissimos.
+            </p>
+          </div>
+        </div>
+        <section id="about">
+          <h2 class="about__heading secondary-heading">About Me</h2>
+          <p class="sub-heading">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Repudiandae ipsum quam iure culpa autem obcaecati vel fugiat maxime
+          </p>
+        </section>
+      </section>
+      <section id="projects">
+        <h2 class="projects__heading secondary-heading">My Projects</h2>
+
+        <div class="projects__container">
+          <div class="project__box project__box--left">
+            <div class="project__box--text">
+              <h3 class="tertiary-heading project__heading">
+                Gardening Weather and Air Quality
+              </h3>
+              <p class="project-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                commodi ab sit
+              </p>
+              <div class="project__box__links">
+                <a
+                  href="https://bryturner.github.io/Garden-Weather-AQI-v2/"
+                  target="_blank"
+                  class="btn btn__project"
+                  >Visit the site</a
+                >
+                <a
+                  href="https://github.com/bryturner/Garden-Weather-AQI-v2"
+                  target="_blank"
+                  class="btn btn__project"
+                  >See the code</a
+                >
+              </div>
+            </div>
+            <div class="project__img__wrapper">
+              <img
+                src="/img/weather-mock.png"
+                alt="Image of a laptop and smart phone displaying a weather forecast application"
+                class="project__img"
+              />
+            </div>
+          </div>
+
+          <div class="project__box project__box--right">
+            <div class="project__img__wrapper">
+              <img src="/img/rememb-o-mock.png" alt="" class="project__img" />
+            </div>
+            <div class="project__box--text">
+              <h3 class="tertiary-heading project__heading">Rememb-o-map</h3>
+              <p class="project-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                commodi ab sit
+              </p>
+              <div class="project__box__links">
+                <a
+                  href="https://bryturner.github.io/Rememb-o-map/"
+                  target="_blank"
+                  class="btn btn__project"
+                  >Visit the site</a
+                >
+                <a
+                  href="https://github.com/bryturner/Rememb-o-map"
+                  target="_blank"
+                  class="btn btn__project"
+                  >See the code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project__box project__box--left">
+            <div class="project__box--text">
+              <h3 class="tertiary-heading project__heading">Project title</h3>
+              <p class="project-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                commodi ab sit
+              </p>
+              <div class="project__box__links">
+                <a href="#" class="btn btn__project">Visit the site</a>
+                <a href="#" class="btn btn__project">See the code</a>
+              </div>
+            </div>
+            <div class="project__img__wrapper">
+              <img src="/img/laptop.jpg" alt="" class="project__img" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact__container">
+          <h2 class="contact__heading secondary-heading">
+            Contact Information
+          </h2>
+          <p class="sub-heading">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            ipsam exercitationem corrupti dolore, eveniet
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="footer__container">
+        <a href="#" class="btn footer__link"
+          >Designed & Built by Bryan Turner</a
+        >
+      </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
