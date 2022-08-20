@@ -3,20 +3,14 @@
 //  Toggle light/dark page mode
 const toggleModeChk = document.getElementById('toggle-mode-checkbox');
 
-// const toggleModeIcon = () => {
-//   const toggleLabel = document.querySelector('.toggle-label');
-
-//   toggleLabel.innerHTML.includes('black')
-//     ? (toggleLabel.innerHTML = `<img src=\"/img/mode-icon-white.svg\" class=\"nav__mode-icon\">`)
-//     : (toggleLabel.innerHTML = `<img src=\"/img/mode-icon-black.svg\" class=\"nav__mode-icon\">`);
-// };
-
 const toggleModeIcon = () => {
-  const toggleLabel = document.querySelector('.toggle-label');
+  const modeIcon = document.getElementById('mode-icon');
 
-  toggleLabel.innerHTML.includes('black')
-    ? (toggleLabel.innerHTML = `<img src=\"/img/mode-icon-white.svg\" class=\"nav__mode-icon\">`)
-    : (toggleLabel.innerHTML = `<img src=\"/img/mode-icon-black.svg\" class=\"nav__mode-icon\">`);
+  if (toggleModeChk.checked) {
+    modeIcon.src = 'images/mode-icon-black.svg';
+  } else {
+    modeIcon.src = 'images/mode-icon-white.svg';
+  }
 };
 
 toggleModeChk.addEventListener('change', () => {
