@@ -72,12 +72,20 @@
 
     <main id="main">
       <section id="landing">
-        <div class="landing__container">
+        <div class="landing__container center-section">
           <div class="landing__heading-text">
-            <h1 class="primary-heading landing-heading">I'm Bryan Turner</h1>
-            <p class="sub-heading">
-              Software engineer. Creator. Problem solver.
-            </p>
+            <h1 class="primary-heading landing-heading">
+              I'm <span class="name-heading"> Bryan Turner </span>
+            </h1>
+            <div class="word-carousel">
+              <ul class="carousel-list">
+                <li class="carousel-list-item">Software Engineer</li>
+                <li class="carousel-list-item">Problem Solver</li>
+                <li class="carousel-list-item">Builder</li>
+                <li class="carousel-list-item">Team Member</li>
+                <li class="carousel-list-item">Cool Dude</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -86,17 +94,149 @@
         <div class="center-section">
           <h2 class="about__heading secondary-heading">ABOUT ME</h2>
           <div class="about__container">
-            <p class="sub-heading">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Repudiandae ipsum quam iure culpa autem obcaecati vel fugiat
-              maxime
-            </p>
+            <div class="about__text-container">
+              <form id="about__length" class="about__length-control">
+                <fieldset class="about__fieldset">
+                  <legend class="about__legend">
+                    How much would you like to know?
+                  </legend>
+                  <div class="about__length-options">
+                    <div class="about__option">
+                      <input
+                        type="radio"
+                        class="about__input"
+                        name="about__length"
+                        id="length-least"
+                        value="least"
+                      />
+                      <label for="length-least" class="about__label"> </label>
+                    </div>
+                    <div class="about__option">
+                      <input
+                        type="radio"
+                        class="about__input"
+                        name="about__length"
+                        id="length-less"
+                        value="less"
+                      />
+                      <label for="length-less" class="about__label"> </label>
+                    </div>
+                    <div class="about__option">
+                      <input
+                        type="radio"
+                        class="about__input"
+                        name="about__length"
+                        id="length-default"
+                        value="default"
+                        checked
+                      />
+                      <label for="length-default" class="about__label"></label>
+                    </div>
+                    <div class="about__option">
+                      <input
+                        type="radio"
+                        class="about__input"
+                        name="about__length"
+                        id="length-more"
+                        value="more"
+                      />
+                      <label for="length-more" class="about__label"></label>
+                    </div>
+                    <div class="about__option">
+                      <input
+                        type="radio"
+                        class="about__input"
+                        name="about__length"
+                        id="length-most"
+                        value="most"
+                      />
+                      <label for="length-most" class="about__label"></label>
+                    </div>
+                    <p class="about__length-text">Less</p>
+                    <p class="about__length-text">More</p>
+                  </div>
+                </fieldset>
+              </form>
+
+              <template id="about__texts">
+                <p data-length="least">
+                  An error has occurred. Please wait to be redirected...
+                </p>
+                <p data-length="less">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                  voluptates
+                </p>
+                <p data-length="default">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit esse facere, quasi error exercitationem, velit at
+                  consequatur numquam neque amet architecto debitis reiciendis,
+                  quam sed in sapiente nobis suscipit nostrum
+                </p>
+                <p data-length="more">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Fuga, minus. Possimus laboriosam sed ipsam veniam cupiditate
+                  voluptas vel velit aliquid rerum, esse voluptate dolorum sunt
+                  totam earum est repellendus sit? Lorem ipsum dolor sit amet
+                  consectetur, adipisicing elit. Quasi, numquam distinctio harum
+                  expedita ducimus commodi
+                </p>
+                <p data-length="most">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Fuga, minus. Possimus laboriosam sed ipsam veniam cupiditate
+                  voluptas vel velit aliquid rerum, esse voluptate dolorum sunt
+                  totam earum est repellendus sit? Lorem ipsum dolor sit amet
+                  consectetur, adipisicing elit. Quasi, numquam distinctio harum
+                  expedita ducimus commodi dolorum in. Dignissimos
+                  exercitationem molestiae assumenda unde enim cumque debitis,
+                  vel sint beatae, veniam provident?
+                </p>
+              </template>
+
+              <p class="about__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                esse facere, quasi error exercitationem, velit at consequatur
+                numquam neque amet architecto debitis reiciendis, quam sed in
+                sapiente nobis suscipit nostrum
+              </p>
+            </div>
+
             <div class="about__image-wrapper">
               <img
                 class="about__image"
                 src="images/prof-parrots.png"
                 alt="Image of Bryan Turner"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills-tools">
+        <div class="center-section">
+          <h2 class="skills__heading secondary-heading">SKILLS & TOOLS</h2>
+          <div class="skills__container">
+            <p class="sub-heading skills__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repudiandae ipsum quam iure culpa autem obcaecati vel fugiat
+              maxime
+            </p>
+            <div class="skills-list-wrapper">
+              <h3 class="skills-header">Technical Skills</h3>
+              <ul class="skills-list">
+                <li class="skills-list-item">Skill</li>
+                <li class="skills-list-item">Skill</li>
+                <li class="skills-list-item">Skill</li>
+                <li class="skills-list-item">Skill</li>
+              </ul>
+            </div>
+            <div class="skills-list-wrapper">
+              <h3 class="skills-header">Soft Skills</h3>
+              <ul class="skills-list">
+                <li class="skills-list-item">Skill</li>
+                <li class="skills-list-item">Skill</li>
+                <li class="skills-list-item">Skill</li>
+                <li class="skills-list-item">Skill</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -114,7 +254,7 @@
                   class="project__img"
                 />
               </div>
-              <div class="project__box--text">
+              <div class="project__box-info">
                 <h3 class="tertiary-heading project__heading">Project title</h3>
                 <p class="project-description">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
@@ -166,7 +306,7 @@
             </div>
 
             <div class="project__box">
-              <div class="project__box--text">
+              <div class="project__box-info">
                 <h3 class="tertiary-heading project__heading">
                   Gardening Weather and Air Quality
                 </h3>
@@ -224,7 +364,7 @@
                   class="project__img"
                 />
               </div>
-              <div class="project__box--text">
+              <div class="project__box-info">
                 <h3 class="tertiary-heading project__heading">Rememb-o-map</h3>
                 <p class="project-description">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia

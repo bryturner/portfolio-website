@@ -35,3 +35,24 @@
 //     }
 //   });
 // });
+
+const aboutTexts = document
+  .querySelector('#about__texts')
+  .content.cloneNode(!0);
+const aboutText = document.querySelector('.about__text');
+const options = document.querySelector('.about__length-options');
+
+options.addEventListener('change', e => {
+  const targetText = aboutTexts.querySelector(
+    `[data-length=${e.target.value}]`
+  );
+  aboutText.innerHTML = targetText.innerHTML;
+
+  if (e.target.value === 'least') {
+    setTimeout(() => {
+      aboutText.innerHTML =
+        aboutTexts.querySelector(`[data-length=most]`).innerHTML;
+      options.querySelector('#length-most').checked = true;
+    }, 3000);
+  }
+});
