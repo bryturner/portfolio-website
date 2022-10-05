@@ -26,10 +26,6 @@
     <header id="header">
       <div class="header__container">
         <nav class="nav">
-          <div class="nav__logo-container">
-            <a href="#" class="link nav__logo-link" target="_blank"> BT </a>
-          </div>
-
           <ul class="nav__list">
             <li class="nav__list-item">
               <a href="#about" class="link link-scroll">About Me</a>
@@ -43,14 +39,14 @@
             <li class="nav__list-item">
               <a href="#contact" class="link link-scroll">Contact</a>
             </li>
-            <!-- <li class="nav__list-item">
+            <li class="nav__list-item">
               <a
                 href="/docs/Bryan_Turner_Resume_2-27 .pdf"
-                class="btn btn-secondary"
+                class="link"
                 target="_blank"
                 >Resume</a
               >
-            </li> -->
+            </li>
           </ul>
         </nav>
       </div>
@@ -114,124 +110,63 @@
 
       <section id="skills-tools">
         <div class="center-section">
-          <h2 class="skills-tools__heading secondary-heading">
-            SKILLS & TOOLS
-          </h2>
+          <h2 class="skills__heading secondary-heading">SKILLS & TOOLS</h2>
           <div class="skills__container">
-            <p class="sub-heading skills__text">
-              Skills, tools and certifications that will make me a person you'll
-              want on your team.
-            </p>
-
-            <div class="skills__lists-container">
-              <ul class="skills__list">
-                <li class="skills__list-item">
-                  <input
-                    type="checkbox"
-                    class="skills__list-checkbox"
-                    id="languages"
-                    checked
-                  />
-                  <label class="skills__list-heading" for="languages"
-                    >Programming Languages</label
-                  >
-                  <span class="list-util"></span>
-                  <ul class="sub-list">
-                    <li class="sub-list-item">JavaScript</li>
-                    <li class="sub-list-item">Python</li>
-                    <li class="sub-list-item">CSS3</li>
-                    <li class="sub-list-item">HTML5</li>
-                  </ul>
-                </li>
-                <li class="skills__list-item">
-                  <input
-                    type="checkbox"
-                    class="skills__list-checkbox"
-                    id="technical"
-                    checked
-                  />
-                  <label class="skills__list-heading" for="technical"
-                    >Technical Skills</label
-                  >
-                  <span class="list-util"></span>
-                  <ul class="sub-list">
-                    <li class="sub-list-item">React</li>
-                    <li class="sub-list-item">Node.js</li>
-                    <li class="sub-list-item">MongoDB</li>
-                    <li class="sub-list-item">JSON Web Tokens</li>
-                    <li class="sub-list-item">Authentication/Authorization</li>
-                    <li class="sub-list-item">RESTful APIs</li>
-                    <li class="sub-list-item">Responsive Design</li>
-                    <li class="sub-list-item">GIMP</li>
-                  </ul>
-                </li>
-                <li class="skills__list-item">
-                  <input
-                    type="checkbox"
-                    class="skills__list-checkbox"
-                    id="soft"
-                    checked
-                  />
-                  <label class="skills__list-heading" for="soft"
-                    >Soft Skills</label
-                  >
-                  <span class="list-util"></span>
-                  <ul class="sub-list">
-                    <li class="sub-list-item">Interpersonal communication</li>
-                    <li class="sub-list-item">Attention to detail</li>
-                    <li class="sub-list-item">Working on teams</li>
-                    <li class="sub-list-item"></li>
-                    <li class="sub-list-item"></li>
-                  </ul>
-                </li>
-                <li class="skills__list-item">
-                  <input
-                    type="checkbox"
-                    class="skills__list-checkbox"
-                    id="tools"
-                    checked
-                  />
-                  <label class="skills__list-heading" for="tools">Tools</label>
-                  <span class="list-util"></span>
-                  <ul class="sub-list">
-                    <li class="sub-list-item">Github</li>
-                    <li class="sub-list-item">Styled Components</li>
-                    <li class="sub-list-item">Puppeteer</li>
-                    <li class="sub-list-item">Insomnia</li>
-                    <li class="sub-list-item">React Testing Library</li>
-                    <li class="sub-list-item">Jest Testing</li>
-                    <li class="sub-list-item">VS Code IDE</li>
-                    <li class="sub-list-item"></li>
-                  </ul>
-                </li>
-                <li class="skills__list-item">
-                  <input
-                    type="checkbox"
-                    class="skills__list-checkbox"
-                    id="certs"
-                    checked
-                  />
-                  <label class="skills__list-heading" for="certs"
-                    >Certifications & Courses</label
-                  >
-                  <span class="list-util"></span>
-                  <ul class="sub-list">
-                    <li class="sub-list-item">AWS Cloud Practitioner</li>
-                    <li class="sub-list-item">
-                      Bryan Turner's Self-Awarded Master Googler Certificate
-                    </li>
-                    <li class="sub-list-item">
-                      Udemy The Complete JavaScript - Jonas Schmedtmann
-                    </li>
-                    <li class="sub-list-item">
-                      Udemy Responsive CSS & HTML - Jonas Schmedtmann
-                    </li>
-                    <li class="sub-list-item">
-                      Test DaF - German as a second language
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+            <div class="skills__icon-wrapper">
+              <img
+                class="skills__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              />
+              <p class="skills__icon-text">React</p>
+            </div>
+            <div class="skills__icon-wrapper">
+              <img
+                class="skills__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              />
+              <p class="skills__icon-text">JavaScript</p>
+            </div>
+            <div class="skills__icon-wrapper">
+              <img
+                class="skills__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              />
+              <p class="skills__icon-text">HTML5</p>
+            </div>
+            <div class="skills__icon-wrapper">
+              <img
+                class="skills__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              />
+              <p class="skills__icon-text">CSS3</p>
+            </div>
+            <div class="skills__icon-wrapper">
+              <img
+                class="skills__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
+              />
+              <p class="skills__icon-text">MongoDB</p>
+            </div>
+            <div class="skills__icon-wrapper">
+              <img
+                class="skills__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
+              />
+              <p class="skills__icon-text">Node.JS</p>
+            </div>
+            <div class="skills__icon-wrapper">
+              <img
+                class="skills__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
+              />
+              <p class="skills__icon-text">Jest</p>
+            </div>
+            <div class="skills__icon-wrapper">
+              <img
+                class="skills__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+              />
+              <p class="skills__icon-text">AWS</p>
             </div>
           </div>
         </div>
@@ -359,13 +294,13 @@
               </div>
             </div>
 
-            <div class="about__image-wrapper">
+            <!-- <div class="about__image-wrapper">
               <img
                 class="about__image"
                 src="images/prof-parrots.png"
                 alt="Image of Bryan Turner"
               />
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
