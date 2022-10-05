@@ -26,45 +26,31 @@
     <header id="header">
       <div class="header__container">
         <nav class="nav">
-          <div class="nav__icon-container">
-            <a href="#" class="nav__icon-link" target="_blank">
-              <img
-                class="nav__icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg"
-              />
-            </a>
-            <a href="#" class="nav__icon-link" target="_blank">
-              <img
-                class="nav__icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-              />
-            </a>
+          <div class="nav__logo-container">
+            <a href="#" class="link nav__logo-link" target="_blank"> BT </a>
           </div>
 
           <ul class="nav__list">
             <li class="nav__list-item">
-              <a href="#about" class="btn btn__nav--text link-scroll"
-                >About Me</a
-              >
+              <a href="#about" class="link link-scroll">About Me</a>
             </li>
             <li class="nav__list-item">
-              <a href="#projects" class="btn btn__nav--text link-scroll"
-                >Projects</a
-              >
+              <a href="#projects" class="link link-scroll">Projects</a>
             </li>
             <li class="nav__list-item">
-              <a href="#contact" class="btn btn__nav--text link-scroll"
-                >Contact</a
-              >
+              <a href="#projects" class="link link-scroll">Skills & Tools</a>
             </li>
             <li class="nav__list-item">
+              <a href="#contact" class="link link-scroll">Contact</a>
+            </li>
+            <!-- <li class="nav__list-item">
               <a
                 href="/docs/Bryan_Turner_Resume_2-27 .pdf"
-                class="btn btn__nav--text"
+                class="btn btn-secondary"
                 target="_blank"
                 >Resume</a
               >
-            </li>
+            </li> -->
           </ul>
         </nav>
       </div>
@@ -73,17 +59,155 @@
     <main id="main">
       <section id="landing">
         <div class="landing__container center-section">
-          <div class="landing__heading-text">
-            <h1 class="primary-heading landing-heading">
-              I'm <span class="name-heading"> Bryan Turner </span>
-            </h1>
-            <div class="word-carousel">
-              <ul class="carousel-list">
-                <li class="carousel-list-item">Software Engineer</li>
-                <li class="carousel-list-item">Problem Solver</li>
-                <li class="carousel-list-item">Builder</li>
-                <li class="carousel-list-item">Team Member</li>
-                <li class="carousel-list-item">Cool Dude</li>
+          <div class="landing__grid">
+            <div class="landing__text-container">
+              <div class="landing__heading-text">
+                <h1 class="landing__heading">I'm Bryan Turner</h1>
+                <div class="word-carousel">
+                  <ul class="carousel-list">
+                    <li class="carousel-list-item">Software engineer</li>
+                    <li class="carousel-list-item">Builder</li>
+                    <li class="carousel-list-item">Critical Thinker</li>
+                    <li class="carousel-list-item">Problem solver</li>
+                    <li class="carousel-list-item">Full stack developer</li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#projects" class="landing-link link-scroll"
+                >View my work</a
+              >
+            </div>
+
+            <div class="landing__image-wrapper">
+              <img
+                class="landing__image"
+                src="images/prof-parrots.png"
+                alt="Image of Bryan Turner"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills-tools">
+        <div class="center-section">
+          <h2 class="skills-tools__heading secondary-heading">
+            SKILLS & TOOLS
+          </h2>
+          <div class="skills__container">
+            <p class="sub-heading skills__text">
+              Skills, tools and certifications that will make me a person you'll
+              want on your team.
+            </p>
+
+            <div class="skills__lists-container">
+              <ul class="skills__list">
+                <li class="skills__list-item">
+                  <input
+                    type="checkbox"
+                    class="skills__list-checkbox"
+                    id="languages"
+                    checked
+                  />
+                  <label class="skills__list-heading" for="languages"
+                    >Programming Languages</label
+                  >
+                  <span class="list-util"></span>
+                  <ul class="sub-list">
+                    <li class="sub-list-item">JavaScript</li>
+                    <li class="sub-list-item">Python</li>
+                    <li class="sub-list-item">CSS3</li>
+                    <li class="sub-list-item">HTML5</li>
+                  </ul>
+                </li>
+                <li class="skills__list-item">
+                  <input
+                    type="checkbox"
+                    class="skills__list-checkbox"
+                    id="technical"
+                    checked
+                  />
+                  <label class="skills__list-heading" for="technical"
+                    >Technical Skills</label
+                  >
+                  <span class="list-util"></span>
+                  <ul class="sub-list">
+                    <li class="sub-list-item">React</li>
+                    <li class="sub-list-item">Node.js</li>
+                    <li class="sub-list-item">MongoDB</li>
+                    <li class="sub-list-item">JSON Web Tokens</li>
+                    <li class="sub-list-item">Authentication/Authorization</li>
+                    <li class="sub-list-item">RESTful APIs</li>
+                    <li class="sub-list-item">Responsive Design</li>
+                    <li class="sub-list-item">GIMP</li>
+                  </ul>
+                </li>
+                <li class="skills__list-item">
+                  <input
+                    type="checkbox"
+                    class="skills__list-checkbox"
+                    id="soft"
+                    checked
+                  />
+                  <label class="skills__list-heading" for="soft"
+                    >Soft Skills</label
+                  >
+                  <span class="list-util"></span>
+                  <ul class="sub-list">
+                    <li class="sub-list-item">Interpersonal communication</li>
+                    <li class="sub-list-item">Attention to detail</li>
+                    <li class="sub-list-item">Working on teams</li>
+                    <li class="sub-list-item"></li>
+                    <li class="sub-list-item"></li>
+                  </ul>
+                </li>
+                <li class="skills__list-item">
+                  <input
+                    type="checkbox"
+                    class="skills__list-checkbox"
+                    id="tools"
+                    checked
+                  />
+                  <label class="skills__list-heading" for="tools">Tools</label>
+                  <span class="list-util"></span>
+                  <ul class="sub-list">
+                    <li class="sub-list-item">Github</li>
+                    <li class="sub-list-item">Styled Components</li>
+                    <li class="sub-list-item">Puppeteer</li>
+                    <li class="sub-list-item">Insomnia</li>
+                    <li class="sub-list-item">React Testing Library</li>
+                    <li class="sub-list-item">Jest Testing</li>
+                    <li class="sub-list-item">VS Code IDE</li>
+                    <li class="sub-list-item"></li>
+                  </ul>
+                </li>
+                <li class="skills__list-item">
+                  <input
+                    type="checkbox"
+                    class="skills__list-checkbox"
+                    id="certs"
+                    checked
+                  />
+                  <label class="skills__list-heading" for="certs"
+                    >Certifications & Courses</label
+                  >
+                  <span class="list-util"></span>
+                  <ul class="sub-list">
+                    <li class="sub-list-item">AWS Cloud Practitioner</li>
+                    <li class="sub-list-item">
+                      Bryan Turner's Self-Awarded Master Googler Certificate
+                    </li>
+                    <li class="sub-list-item">
+                      Udemy The Complete JavaScript - Jonas Schmedtmann
+                    </li>
+                    <li class="sub-list-item">
+                      Udemy Responsive CSS & HTML - Jonas Schmedtmann
+                    </li>
+                    <li class="sub-list-item">
+                      Test DaF - German as a second language
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </div>
           </div>
@@ -198,6 +322,18 @@
                 numquam neque amet architecto debitis reiciendis, quam sed in
                 sapiente nobis suscipit nostrum
               </p>
+
+              <div class="about__icon-container">
+                <a href="#" class="about__icon-link" target="_blank">
+                  <i class="about__icon devicon-linkedin-plain"></i>
+                </a>
+                <a href="#" class="about__icon-link" target="_blank">
+                  <i class="about__icon devicon-github-original"></i>
+                </a>
+                <a href="#" class="about__icon-link" target="_blank">
+                  <span class="material-icons about__icon"> email </span>
+                </a>
+              </div>
             </div>
 
             <div class="about__image-wrapper">
@@ -206,37 +342,6 @@
                 src="images/prof-parrots.png"
                 alt="Image of Bryan Turner"
               />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills-tools">
-        <div class="center-section">
-          <h2 class="skills__heading secondary-heading">SKILLS & TOOLS</h2>
-          <div class="skills__container">
-            <p class="sub-heading skills__text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Repudiandae ipsum quam iure culpa autem obcaecati vel fugiat
-              maxime
-            </p>
-            <div class="skills-list-wrapper">
-              <h3 class="skills-header">Technical Skills</h3>
-              <ul class="skills-list">
-                <li class="skills-list-item">Skill</li>
-                <li class="skills-list-item">Skill</li>
-                <li class="skills-list-item">Skill</li>
-                <li class="skills-list-item">Skill</li>
-              </ul>
-            </div>
-            <div class="skills-list-wrapper">
-              <h3 class="skills-header">Soft Skills</h3>
-              <ul class="skills-list">
-                <li class="skills-list-item">Skill</li>
-                <li class="skills-list-item">Skill</li>
-                <li class="skills-list-item">Skill</li>
-                <li class="skills-list-item">Skill</li>
-              </ul>
             </div>
           </div>
         </div>
@@ -409,12 +514,61 @@
       </section>
 
       <section id="contact">
-        <div class="contact__container center-section">
+        <div class="center-section">
           <h2 class="contact__heading secondary-heading">CONTACT</h2>
-          <p class="sub-heading">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-            ipsam exercitationem corrupti dolore, eveniet
-          </p>
+          <div class="contact__container">
+            <!-- action: email, method: post -->
+            <form class="contact__form">
+              <h3 class="contact__form-heading">Get in touch</h3>
+              <label for="contact-name" class="contact__label">
+                <input
+                  type="text"
+                  id="contact-name"
+                  class="contact__input"
+                  placeholder="Name"
+                  required
+                />
+              </label>
+              <label for="contact-email" class="contact__label">
+                <input
+                  type="email"
+                  id="contact-email"
+                  class="contact__input"
+                  placeholder="Email"
+                  required
+                />
+              </label>
+              <label for="contact-message" class="contact__label">
+                <textarea
+                  id="contact-message"
+                  class="contact__input contact__textarea"
+                  placeholder="Message"
+                  rows="6"
+                  required
+                ></textarea>
+              </label>
+              <button type="submit" class="btn">Send Email</button>
+            </form>
+            <div class="contact__links-container">
+              <p class="sub-heading">
+                View my resume or take a trip to my Github page!
+              </p>
+              <div class="contact__links-wrapper">
+                <a
+                  href="/docs/Bryan_Turner_Resume_2-27 .pdf"
+                  class="link contact__link"
+                  target="_blank"
+                  >Resume</a
+                >
+                <a href="#" class="link contact__link" target="_blank"
+                  >Github</a
+                >
+                <a href="#" class="link contact__link" target="_blank"
+                  >LinkedIn</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

@@ -40,9 +40,9 @@ const aboutTexts = document
   .querySelector('#about__texts')
   .content.cloneNode(!0);
 const aboutText = document.querySelector('.about__text');
-const options = document.querySelector('.about__length-options');
+const aboutOptions = document.querySelector('.about__length-options');
 
-options.addEventListener('change', e => {
+aboutOptions.addEventListener('change', e => {
   const targetText = aboutTexts.querySelector(
     `[data-length=${e.target.value}]`
   );
@@ -52,7 +52,19 @@ options.addEventListener('change', e => {
     setTimeout(() => {
       aboutText.innerHTML =
         aboutTexts.querySelector(`[data-length=most]`).innerHTML;
-      options.querySelector('#length-most').checked = true;
+      aboutOptions.querySelector('#length-most').checked = true;
     }, 3000);
   }
+});
+
+const skillTexts = document
+  .querySelector('#skill__texts')
+  .content.cloneNode(!0);
+const skillText = document.querySelector('.skill__text');
+const skillOptions = document.querySelector('.skill__selection');
+
+skillOptions.addEventListener('change', e => {
+  const targetText = skillTexts.querySelector(`[data-title=${e.target.value}]`);
+
+  skillText.innerHTML = targetText.innerHTML;
 });
