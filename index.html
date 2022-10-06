@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/phosphor-icons"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,15 +11,11 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>Bryan Turner Portfolio</title>
+    <title>Bryan Turner | Full Stack Developer</title>
   </head>
   <body>
     <header id="header">
@@ -31,18 +26,20 @@
               <a href="#about" class="link link-scroll">About Me</a>
             </li>
             <li class="nav__list-item">
-              <a href="#projects" class="link link-scroll">Projects</a>
+              <a href="#skills-tools" class="link link-scroll"
+                >Skills & Tools</a
+              >
             </li>
             <li class="nav__list-item">
-              <a href="#projects" class="link link-scroll">Skills & Tools</a>
+              <a href="#projects" class="link link-scroll">Projects</a>
             </li>
             <li class="nav__list-item">
               <a href="#contact" class="link link-scroll">Contact</a>
             </li>
             <li class="nav__list-item">
               <a
-                href="/docs/Bryan_Turner_Resume_2-27 .pdf"
-                class="link"
+                href="/docs/Bryan_Turner-cv-10-7-22.pdf"
+                class="btn btn-primary nav__btn"
                 target="_blank"
                 >Resume</a
               >
@@ -68,17 +65,17 @@
           <img
             src="/images/background-circle.png"
             alt="background circle design"
-            class="hero__background-circle-sm"
+            class="hero__background-circle-sm background-circle"
           />
           <img
             src="/images/background-circle.png"
             alt="background circle design"
-            class="hero__background-circle-md"
+            class="hero__background-circle-md background-circle"
           />
           <img
             src="/images/background-circle.png"
             alt="background circle design"
-            class="hero__background-circle-lg"
+            class="hero__background-circle-lg background-circle"
           />
           <div class="hero__grid">
             <div class="hero__text-container">
@@ -94,7 +91,9 @@
                   molestiae fugit reiciendis
                 </p>
               </div>
-              <a href="#projects" class="hero-link link-scroll">View my work</a>
+              <a href="#projects" class="btn btn-primary hero__btn link-scroll"
+                >View my work</a
+              >
             </div>
 
             <div class="hero__image-wrapper">
@@ -110,7 +109,7 @@
 
       <section id="skills-tools">
         <div class="center-section">
-          <h2 class="skills__heading secondary-heading">SKILLS & TOOLS</h2>
+          <h2 class="secondary-heading">SKILLS & TOOLS</h2>
           <div class="skills__container">
             <div class="skills__icon-wrapper">
               <img
@@ -168,148 +167,47 @@
               />
               <p class="skills__icon-text">AWS</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about">
-        <div class="center-section">
-          <h2 class="about__heading secondary-heading">ABOUT ME</h2>
-          <div class="about__container">
-            <div class="about__text-container">
-              <form id="about__length" class="about__length-control">
-                <fieldset class="about__fieldset">
-                  <legend class="about__legend">
-                    How much would you like to know?
-                  </legend>
-                  <div class="about__length-options">
-                    <div class="about__option">
-                      <input
-                        type="radio"
-                        class="about__input"
-                        name="about__length"
-                        id="length-least"
-                        value="least"
-                      />
-                      <label for="length-least" class="about__label"> </label>
-                    </div>
-                    <div class="about__option">
-                      <input
-                        type="radio"
-                        class="about__input"
-                        name="about__length"
-                        id="length-less"
-                        value="less"
-                      />
-                      <label for="length-less" class="about__label"> </label>
-                    </div>
-                    <div class="about__option">
-                      <input
-                        type="radio"
-                        class="about__input"
-                        name="about__length"
-                        id="length-default"
-                        value="default"
-                        checked
-                      />
-                      <label for="length-default" class="about__label"></label>
-                    </div>
-                    <div class="about__option">
-                      <input
-                        type="radio"
-                        class="about__input"
-                        name="about__length"
-                        id="length-more"
-                        value="more"
-                      />
-                      <label for="length-more" class="about__label"></label>
-                    </div>
-                    <div class="about__option">
-                      <input
-                        type="radio"
-                        class="about__input"
-                        name="about__length"
-                        id="length-most"
-                        value="most"
-                      />
-                      <label for="length-most" class="about__label"></label>
-                    </div>
-                    <p class="about__length-text">Less</p>
-                    <p class="about__length-text">More</p>
-                  </div>
-                </fieldset>
-              </form>
-
-              <template id="about__texts">
-                <p data-length="least">
-                  An error has occurred. Please wait to be redirected...
-                </p>
-                <p data-length="less">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                  voluptates
-                </p>
-                <p data-length="default">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Impedit esse facere, quasi error exercitationem, velit at
-                  consequatur numquam neque amet architecto debitis reiciendis,
-                  quam sed in sapiente nobis suscipit nostrum
-                </p>
-                <p data-length="more">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Fuga, minus. Possimus laboriosam sed ipsam veniam cupiditate
-                  voluptas vel velit aliquid rerum, esse voluptate dolorum sunt
-                  totam earum est repellendus sit? Lorem ipsum dolor sit amet
-                  consectetur, adipisicing elit. Quasi, numquam distinctio harum
-                  expedita ducimus commodi
-                </p>
-                <p data-length="most">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Fuga, minus. Possimus laboriosam sed ipsam veniam cupiditate
-                  voluptas vel velit aliquid rerum, esse voluptate dolorum sunt
-                  totam earum est repellendus sit? Lorem ipsum dolor sit amet
-                  consectetur, adipisicing elit. Quasi, numquam distinctio harum
-                  expedita ducimus commodi dolorum in. Dignissimos
-                  exercitationem molestiae assumenda unde enim cumque debitis,
-                  vel sint beatae, veniam provident?
-                </p>
-              </template>
-
-              <p class="about__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                esse facere, quasi error exercitationem, velit at consequatur
-                numquam neque amet architecto debitis reiciendis, quam sed in
-                sapiente nobis suscipit nostrum
-              </p>
-
-              <div class="about__icon-container">
-                <a href="#" class="about__icon-link" target="_blank">
-                  <i class="about__icon devicon-linkedin-plain"></i>
-                </a>
-                <a href="#" class="about__icon-link" target="_blank">
-                  <i class="about__icon devicon-github-original"></i>
-                </a>
-                <a href="#" class="about__icon-link" target="_blank">
-                  <span class="material-icons about__icon"> email </span>
-                </a>
-              </div>
-            </div>
-
-            <!-- <div class="about__image-wrapper">
+            <div class="skills__icon-wrapper">
               <img
-                class="about__image"
-                src="images/prof-parrots.png"
-                alt="Image of Bryan Turner"
+                class="skills__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
               />
-            </div> -->
+              <p class="skills__icon-text">Github</p>
+            </div>
+            <div class="skills__icon-wrapper">
+              <img
+                class="skills__icon"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+              />
+              <p class="skills__icon-text">Express</p>
+            </div>
+            <div class="skills__icon-wrapper">
+              <img class="skills__icon" src="/images/puppeteer.png" />
+              <p class="skills__icon-text">Puppeteer</p>
+            </div>
+            <div class="skills__icon-wrapper">
+              <img class="skills__icon" src="/images/insomnia-logo.png" />
+              <p class="skills__icon-text">Insomnia</p>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="projects">
         <div class="projects__container center-section">
+          <img
+            src="/images/background-circle.png"
+            alt="background circle design"
+            class="projects__circle-left background-circle"
+          />
+          <img
+            src="/images/background-circle.png"
+            alt="background circle design"
+            class="projects__circle-right background-circle"
+          />
           <h2 class="projects__heading secondary-heading">MY PROJECTS</h2>
           <div class="project-boxes__container">
-            <div class="project__box">
+            <div class="project-box">
               <div class="project__img__wrapper">
                 <img
                   src="/images/rememb-o-mock.png"
@@ -317,95 +215,53 @@
                   class="project__img"
                 />
               </div>
-              <div class="project__box-info">
-                <h3 class="tertiary-heading project__heading">Project title</h3>
-                <p class="project-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                  commodi ab sit
+              <div class="project-box__info">
+                <h3 class="tertiary-heading project-box__heading">
+                  Compare Groceries in Switzerland
+                </h3>
+                <p class="project-box__description">
+                  Save money by comparing grocery prices in stores that are all
+                  within walking distance of one another. A few clicks and a few
+                  more steps could mean saving big bucks.
                 </p>
-                <div class="project__icon-container">
-                  <img
-                    class="project-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                  />
-                  <img
-                    class="project-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
-                  />
-                  <img
-                    class="project-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
-                  />
-                  <img
-                    class="project-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                  />
-                  <img
-                    class="project-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                  />
-                  <img
-                    class="project-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                  />
-                  <img
-                    class="project-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-                  />
-                  <img
-                    class="project-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
-                  />
-                </div>
-                <div class="project__box__links">
-                  <a href="#" class="btn btn-secondary project__btn"
+                <div class="project-box__links">
+                  <a
+                    href="https://lebensmittel-compare.web.app/"
+                    target="_blank"
+                    class="btn btn-primary project__btn"
                     >Visit the site</a
                   >
-                  <a href="#" class="btn btn-secondary project__btn"
+                  <a
+                    href="https://github.com/bryturner/ch-lebensmittel-compare"
+                    target="_blank"
+                    class="btn btn-primary project__btn"
                     >See the code</a
                   >
                 </div>
               </div>
             </div>
 
-            <div class="project__box">
-              <div class="project__box-info">
-                <h3 class="tertiary-heading project__heading">
-                  Gardening Weather and Air Quality
+            <div class="project-box">
+              <div class="project-box__info">
+                <h3 class="tertiary-heading project-box__heading">
+                  Gardening Weather and AQI
                 </h3>
-                <p class="project-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                  commodi ab sit
+                <p class="project-box__description">
+                  See the forecast and air quality index for your area with
+                  specific recommendations and information related to gardening.
                 </p>
-                <div class="project__icon-container">
-                  <img
-                    class="project-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                  />
-                  <img
-                    class="project-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                  />
-                  <img
-                    class="project-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                  />
-                  <img
-                    class="project-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-                  />
-                </div>
-                <div class="project__box__links">
+
+                <div class="project-box__links">
                   <a
                     href="https://bryturner.github.io/Garden-Weather-AQI-v2/"
                     target="_blank"
-                    class="btn btn-secondary project__btn"
+                    class="btn btn-primary project__btn"
                     >Visit the site</a
                   >
                   <a
                     href="https://github.com/bryturner/Garden-Weather-AQI-v2"
                     target="_blank"
-                    class="btn btn-secondary project__btn"
+                    class="btn btn-primary project__btn"
                     >See the code</a
                   >
                 </div>
@@ -419,7 +275,7 @@
               </div>
             </div>
 
-            <div class="project__box">
+            <div class="project-box">
               <div class="project__img__wrapper">
                 <img
                   src="/images/rememb-o-mock.png"
@@ -427,41 +283,29 @@
                   class="project__img"
                 />
               </div>
-              <div class="project__box-info">
-                <h3 class="tertiary-heading project__heading">Rememb-o-map</h3>
-                <p class="project-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-                  commodi ab sit
+              <div class="project-box__info">
+                <h3 class="tertiary-heading project-box__heading">
+                  Map-a-Memory
+                </h3>
+                <p class="project-box__description">
+                  Users click a location on a map where an event (concert,
+                  dinner at a restaurant, etc.) occurred and record memories
+                  they wish to save from the event. The app uses geolocation to
+                  pinpoint the user's location and local storage to save input
+                  data.
                 </p>
-                <div class="project__icon-container">
-                  <img
-                    class="project-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                  />
-                  <img
-                    class="project-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                  />
-                  <img
-                    class="project-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                  />
-                  <img
-                    class="project-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-                  />
-                </div>
-                <div class="project__box__links">
+
+                <div class="project-box__links">
                   <a
-                    href="https://bryturner.github.io/Rememb-o-map/"
+                    href="https://bryturner.github.io/Map-a-Memory/"
                     target="_blank"
-                    class="btn btn-secondary project__btn"
+                    class="btn btn-primary project__btn"
                     >Visit the site</a
                   >
                   <a
                     href="https://github.com/bryturner/Rememb-o-map"
                     target="_blank"
-                    class="btn btn-secondary project__btn"
+                    class="btn btn-primary project__btn"
                     >See the code</a
                   >
                 </div>
@@ -471,19 +315,137 @@
         </div>
       </section>
 
+      <section id="about">
+        <div class="about__container center-section">
+          <h2 class="about__heading secondary-heading">ABOUT ME</h2>
+          <div class="about__text-container">
+            <form id="about__length" class="about__length-control">
+              <fieldset class="about__fieldset">
+                <legend class="about__legend">
+                  How much would you like to know?
+                </legend>
+                <div class="about__length-options">
+                  <div class="about__option">
+                    <input
+                      type="radio"
+                      class="about__input"
+                      name="about__length"
+                      id="length-least"
+                      value="least"
+                    />
+                    <label for="length-least" class="about__label"></label>
+                  </div>
+                  <div class="about__option">
+                    <input
+                      type="radio"
+                      class="about__input"
+                      name="about__length"
+                      id="length-less"
+                      value="less"
+                    />
+                    <label for="length-less" class="about__label"></label>
+                  </div>
+                  <div class="about__option">
+                    <input
+                      type="radio"
+                      class="about__input"
+                      name="about__length"
+                      id="length-default"
+                      value="default"
+                      checked
+                    />
+                    <label for="length-default" class="about__label"></label>
+                  </div>
+                  <div class="about__option">
+                    <input
+                      type="radio"
+                      class="about__input"
+                      name="about__length"
+                      id="length-more"
+                      value="more"
+                    />
+                    <label for="length-more" class="about__label"></label>
+                  </div>
+                  <div class="about__option">
+                    <input
+                      type="radio"
+                      class="about__input"
+                      name="about__length"
+                      id="length-most"
+                      value="most"
+                    />
+                    <label for="length-most" class="about__label"></label>
+                  </div>
+                  <p class="about__length-text">Less</p>
+                  <p class="about__length-text">More</p>
+                </div>
+              </fieldset>
+            </form>
+
+            <template id="about__texts">
+              <p data-length="least">
+                An error has occurred. Please wait to be redirected...
+              </p>
+              <p data-length="less">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                voluptates
+              </p>
+              <p data-length="default">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                esse facere, quasi error exercitationem, velit at consequatur
+                numquam neque amet architecto debitis reiciendis, quam sed in
+                sapiente nobis suscipit nostrum
+              </p>
+              <p data-length="more">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
+                minus. Possimus laboriosam sed ipsam veniam cupiditate voluptas
+                vel velit aliquid rerum, esse voluptate dolorum sunt totam earum
+                est repellendus sit? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Quasi, numquam distinctio harum expedita
+                ducimus commodi
+              </p>
+              <p data-length="most">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
+                minus. Possimus laboriosam sed ipsam veniam cupiditate voluptas
+                vel velit aliquid rerum, esse voluptate dolorum sunt totam earum
+                est repellendus sit? Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Quasi, numquam distinctio harum expedita
+                ducimus commodi dolorum in. Dignissimos exercitationem molestiae
+                assumenda unde enim cumque debitis, vel sint beatae, veniam
+                provident?
+              </p>
+            </template>
+
+            <p class="about__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              esse facere, quasi error exercitationem, velit at consequatur
+              numquam neque amet architecto debitis reiciendis, quam sed in
+              sapiente nobis suscipit nostrum
+            </p>
+          </div>
+
+          <!-- <div class="about__image-wrapper">
+					<img
+					  class="about__image"
+					  src="images/prof-parrots.png"
+					  alt="Image of Bryan Turner"
+					/>
+				 </div> -->
+        </div>
+      </section>
+
       <section id="contact">
         <div class="center-section">
           <h2 class="contact__heading secondary-heading">CONTACT</h2>
           <div class="contact__container">
             <!-- action: email, method: post -->
             <form class="contact__form">
-              <h3 class="contact__form-heading">Get in touch</h3>
               <label for="contact-name" class="contact__label">
                 <input
                   type="text"
                   id="contact-name"
                   class="contact__input"
-                  placeholder="Name"
+                  placeholder="Name*"
                   required
                 />
               </label>
@@ -492,7 +454,7 @@
                   type="email"
                   id="contact-email"
                   class="contact__input"
-                  placeholder="Email"
+                  placeholder="Email*"
                   required
                 />
               </label>
@@ -500,29 +462,35 @@
                 <textarea
                   id="contact-message"
                   class="contact__input contact__textarea"
-                  placeholder="Message"
+                  placeholder="Message*"
                   rows="6"
                   required
                 ></textarea>
               </label>
-              <button type="submit" class="btn">Send Email</button>
+              <button
+                type="submit"
+                class="btn btn-primary contact__btn contact__btn-email"
+              >
+                Send Email
+              </button>
             </form>
-            <div class="contact__links-container">
-              <p class="sub-heading">
-                View my resume or take a trip to my Github page!
+            <div class="contact__btns-container">
+              <p class="contact__text">
+                Want to know more about my professional background and view some
+                of my code? Click below!
               </p>
-              <div class="contact__links-wrapper">
-                <a
-                  href="/docs/Bryan_Turner_Resume_2-27 .pdf"
-                  class="link contact__link"
-                  target="_blank"
-                  >Resume</a
-                >
-                <a href="#" class="link contact__link" target="_blank"
+              <div class="contact__btns-grid">
+                <a href="#" class="btn btn-primary contact__btn" target="_blank"
                   >Github</a
                 >
-                <a href="#" class="link contact__link" target="_blank"
+                <a href="#" class="btn btn-primary contact__btn" target="_blank"
                   >LinkedIn</a
+                >
+                <a
+                  href="/docs/Bryan_Turner-cv-10-7-22.pdf"
+                  class="btn btn-primary contact__btn"
+                  download="Bryan_Turner_CV"
+                  >Download Resume</a
                 >
               </div>
             </div>
