@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/favicon1.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,9 +16,15 @@
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
     <title>Bryan Turner | Full Stack Developer</title>
   </head>
   <body>
+    <button class="menu__btn">
+      <span class="menu__btn-line"></span>
+      <span class="menu__btn-line"></span>
+      <span class="menu__btn-line"></span>
+    </button>
     <header id="header">
       <div class="header__container">
         <nav class="nav">
@@ -26,9 +33,7 @@
               <a href="#about" class="link link-scroll">About Me</a>
             </li>
             <li class="nav__list-item">
-              <a href="#skills-tools" class="link link-scroll"
-                >Skills & Tools</a
-              >
+              <a href="#skills-tools" class="link link-scroll">Skills</a>
             </li>
             <li class="nav__list-item">
               <a href="#projects" class="link link-scroll">Projects</a>
@@ -52,33 +57,23 @@
     <main id="main">
       <section id="hero">
         <div class="hero__container center-section">
-          <img
-            class="hero__dots-mid"
-            src="/images/dots.png"
-            alt="background dots design"
-          />
-          <img
-            class="hero__dots-bot"
-            src="/images/dots.png"
-            alt="background dots design"
-          />
-          <img
-            src="/images/background-circle.png"
-            alt="background circle design"
-            class="hero__background-circle-sm background-circle"
-          />
-          <img
-            src="/images/background-circle.png"
-            alt="background circle design"
-            class="hero__background-circle-md background-circle"
-          />
-          <img
-            src="/images/background-circle.png"
-            alt="background circle design"
-            class="hero__background-circle-lg background-circle"
-          />
           <div class="hero__grid">
             <div class="hero__text-container">
+              <img
+                src="/images/background-circle.png"
+                alt="background circle design"
+                class="hero__background-circle-sm background-circle"
+              />
+              <img
+                src="/images/background-circle.png"
+                alt="background circle design"
+                class="hero__background-circle-md background-circle"
+              />
+              <img
+                src="/images/background-circle.png"
+                alt="background circle design"
+                class="hero__background-circle-lg background-circle"
+              />
               <div class="hero__heading-text">
                 <h1 class="hero__heading">
                   I'm Bryan Turner, <br />
@@ -86,9 +81,8 @@
                   <span class="hero__span">Full Stack Developer</span>
                 </h1>
                 <p class="hero__subheading">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-                  suscipit? Ullam amet veritatis laboriosam temporibus,
-                  molestiae fugit reiciendis
+                  I have a passion for finding innovative ways to solve complex
+                  problems while writing clean and maintainable code.
                 </p>
               </div>
               <a href="#projects" class="btn btn-primary hero__btn link-scroll"
@@ -97,6 +91,16 @@
             </div>
 
             <div class="hero__image-wrapper">
+              <img
+                class="hero__dots-mid"
+                src="/images/dots.png"
+                alt="background dots design"
+              />
+              <img
+                class="hero__dots-bot"
+                src="/images/dots.png"
+                alt="background dots design"
+              />
               <img
                 class="hero__image"
                 src="images/prof-parrots.png"
@@ -109,85 +113,195 @@
 
       <section id="skills-tools">
         <div class="center-section">
-          <h2 class="secondary-heading">SKILLS & TOOLS</h2>
-          <div class="skills__container">
-            <div class="skills__icon-wrapper">
-              <img
-                class="skills__icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-              />
-              <p class="skills__icon-text">React</p>
+          <h2 class="secondary-heading transY-30 observe">SKILLS & TOOLS</h2>
+
+          <div class="skills__grid">
+            <div class="skills__grid-box transY-80 observe">
+              <h3 class="skills__header">Front-End</h3>
+              <div class="skill__list">
+                <div class="skill__item transY-30 observe">
+                  <div class="skill__image-wrapper">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+                      alt="Angular logo"
+                      class="skill__image"
+                    />
+                  </div>
+                  <div class="skill__name">Angular</div>
+                </div>
+                <div class="skill__item transY-30 observe">
+                  <div class="skill__image-wrapper">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                      alt="ReactJS logo"
+                      class="skill__image"
+                    />
+                  </div>
+                  <div class="skill__name">ReactJS</div>
+                </div>
+                <div class="skill__item transY-30 observe">
+                  <div class="skill__image-wrapper">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                      alt="TypeScript logo"
+                      class="skill__image"
+                    />
+                  </div>
+                  <div class="skill__name">TypeScript</div>
+                </div>
+                <div class="skill__item transY-30 observe">
+                  <div class="skill__image-wrapper">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                      alt="JavaScript logo"
+                      class="skill__image"
+                    />
+                  </div>
+                  <div class="skill__name">JavaScript</div>
+                </div>
+                <div class="skill__item transY-30 observe">
+                  <div class="skill__image-wrapper">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                      alt="CSS logo"
+                      class="skill__image"
+                    />
+                  </div>
+                  <div class="skill__name">CSS</div>
+                </div>
+                <div class="skill__item transY-30 observe">
+                  <div class="skill__image-wrapper">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                      alt="HTML5 logo"
+                      class="skill__image"
+                    />
+                  </div>
+                  <div class="skill__name">HTML5</div>
+                </div>
+              </div>
             </div>
-            <div class="skills__icon-wrapper">
-              <img
-                class="skills__icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-              />
-              <p class="skills__icon-text">JavaScript</p>
+
+            <div class="skills__grid-box transY-80 observe">
+              <h3 class="skills__header">Back-end</h3>
+              <div class="skill__list">
+                <div class="skill__item transY-30 observe">
+                  <div class="skill__image-wrapper">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                      alt="Java logo"
+                      class="skill__image"
+                    />
+                  </div>
+                  <div class="skill__name">Java</div>
+                </div>
+                <div class="skill__item transY-30 observe">
+                  <div class="skill__image-wrapper">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                      alt="Spring Boot logo"
+                      class="skill__image"
+                    />
+                  </div>
+                  <div class="skill__name">Spring Boot</div>
+                </div>
+                <div class="skill__item transY-30 observe">
+                  <div class="skill__image-wrapper">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                      alt="MongoDB logo"
+                      class="skill__image"
+                    />
+                  </div>
+                  <div class="skill__name">MongoDB</div>
+                </div>
+                <div class="skill__item transY-30 observe">
+                  <div class="skill__image-wrapper">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                      alt="PostgreSQL logo"
+                      class="skill__image"
+                    />
+                  </div>
+                  <div class="skill__name">PostgreSQL</div>
+                </div>
+                <div class="skill__item transY-30 observe">
+                  <div class="skill__image-wrapper">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                      alt="NodeJS logo"
+                      class="skill__image"
+                    />
+                  </div>
+                  <div class="skill__name">NodeJS</div>
+                </div>
+              </div>
             </div>
-            <div class="skills__icon-wrapper">
-              <img
-                class="skills__icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-              />
-              <p class="skills__icon-text">HTML5</p>
-            </div>
-            <div class="skills__icon-wrapper">
-              <img
-                class="skills__icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-              />
-              <p class="skills__icon-text">CSS3</p>
-            </div>
-            <div class="skills__icon-wrapper">
-              <img
-                class="skills__icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
-              />
-              <p class="skills__icon-text">MongoDB</p>
-            </div>
-            <div class="skills__icon-wrapper">
-              <img
-                class="skills__icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
-              />
-              <p class="skills__icon-text">Node.JS</p>
-            </div>
-            <div class="skills__icon-wrapper">
-              <img
-                class="skills__icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
-              />
-              <p class="skills__icon-text">Jest</p>
-            </div>
-            <div class="skills__icon-wrapper">
-              <img
-                class="skills__icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-              />
-              <p class="skills__icon-text">AWS</p>
-            </div>
-            <div class="skills__icon-wrapper">
-              <img
-                class="skills__icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-              />
-              <p class="skills__icon-text">Github</p>
-            </div>
-            <div class="skills__icon-wrapper">
-              <img
-                class="skills__icon"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-              />
-              <p class="skills__icon-text">Express</p>
-            </div>
-            <div class="skills__icon-wrapper">
-              <img class="skills__icon" src="/images/puppeteer.png" />
-              <p class="skills__icon-text">Puppeteer</p>
-            </div>
-            <div class="skills__icon-wrapper">
-              <img class="skills__icon" src="/images/insomnia-logo.png" />
-              <p class="skills__icon-text">Insomnia</p>
+
+            <div class="skills__grid-box transY-80 observe">
+              <h3 class="skills__header">Tools</h3>
+              <div class="skill__list">
+                <div class="skill__item transY-30 observe">
+                  <div class="skill__image-wrapper">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+                      alt="Amazon Web Services logo"
+                      class="skill__image"
+                    />
+                  </div>
+                  <div class="skill__name">Amazon Web Services</div>
+                </div>
+                <div class="skill__item transY-30 observe">
+                  <div class="skill__image-wrapper">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                      alt="Git logo"
+                      class="skill__image"
+                    />
+                  </div>
+                  <div class="skill__name">Git</div>
+                </div>
+                <div class="skill__item transY-30 observe">
+                  <div class="skill__image-wrapper">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                      alt="GitHub logo"
+                      class="skill__image"
+                    />
+                  </div>
+                  <div class="skill__name">GitHub</div>
+                </div>
+                <div class="skill__item transY-30 observe">
+                  <div class="skill__image-wrapper">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                      alt="Docker logo"
+                      class="skill__image"
+                    />
+                  </div>
+                  <div class="skill__name">Docker</div>
+                </div>
+                <div class="skill__item transY-30 observe">
+                  <div class="skill__image-wrapper">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
+                      alt="Jest logo"
+                      class="skill__image"
+                    />
+                  </div>
+                  <div class="skill__name">Jest</div>
+                </div>
+                <div class="skill__item transY-30 observe">
+                  <div class="skill__image-wrapper">
+                    <img
+                      src="/images/puppeteer.png"
+                      alt="Puppeteer logo"
+                      class="skill__image"
+                    />
+                  </div>
+                  <div class="skill__name">Puppeteer</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -195,36 +309,60 @@
 
       <section id="projects">
         <div class="projects__container center-section">
-          <img
-            src="/images/background-circle.png"
-            alt="background circle design"
-            class="projects__circle-left background-circle"
-          />
-          <img
-            src="/images/background-circle.png"
-            alt="background circle design"
-            class="projects__circle-right background-circle"
-          />
-          <h2 class="projects__heading secondary-heading">MY PROJECTS</h2>
+          <h2 class="secondary-heading transY-30 observe">MY PROJECTS</h2>
           <div class="project-boxes__container">
-            <div class="project-box">
-              <div class="project__img__wrapper">
+            <div class="project-box transY-80 observe">
+              <div class="project-box__info">
+                <h3 class="tertiary-heading project-box__heading">
+                  Pantry Capstone Project
+                </h3>
+                <p class="project-box__description">
+                  Keep track of items in your family's pantry and use those
+                  ingredients to create, use and share recipes.
+                </p>
+
+                <div class="project-box__btns">
+                  <a
+                    href="https://github.com/bryturner/pantry-capstone-fe"
+                    target="_blank"
+                    class="btn btn-primary project__btn"
+                    >Front-end code</a
+                  >
+                  <a
+                    href="https://github.com/bryturner/pantry-app-be"
+                    target="_blank"
+                    class="btn btn-primary project__btn"
+                    >Back-end code</a
+                  >
+                </div>
+              </div>
+              <div class="project__image-wrapper">
+                <img
+                  src="/images/weather-mock.png"
+                  alt="Image of a laptop and smart phone displaying a weather forecast application"
+                  class="project__image"
+                />
+              </div>
+            </div>
+
+            <div class="project-box transY-80 observe">
+              <div class="project__image-wrapper">
                 <img
                   src="/images/rememb-o-mock.png"
                   alt=""
-                  class="project__img"
+                  class="project__image"
                 />
               </div>
               <div class="project-box__info">
                 <h3 class="tertiary-heading project-box__heading">
-                  Compare Groceries in Switzerland
+                  Compare Grocery Prices
                 </h3>
                 <p class="project-box__description">
                   Save money by comparing grocery prices in stores that are all
                   within walking distance of one another. A few clicks and a few
                   more steps could mean saving big bucks.
                 </p>
-                <div class="project-box__links">
+                <div class="project-box__btns">
                   <a
                     href="https://lebensmittel-compare.web.app/"
                     target="_blank"
@@ -241,7 +379,7 @@
               </div>
             </div>
 
-            <div class="project-box">
+            <div class="project-box transY-80 observe">
               <div class="project-box__info">
                 <h3 class="tertiary-heading project-box__heading">
                   Gardening Weather and AQI
@@ -251,7 +389,7 @@
                   specific recommendations and information related to gardening.
                 </p>
 
-                <div class="project-box__links">
+                <div class="project-box__btns">
                   <a
                     href="https://bryturner.github.io/Garden-Weather-AQI-v2/"
                     target="_blank"
@@ -266,21 +404,21 @@
                   >
                 </div>
               </div>
-              <div class="project__img__wrapper">
+              <div class="project__image-wrapper">
                 <img
                   src="/images/weather-mock.png"
                   alt="Image of a laptop and smart phone displaying a weather forecast application"
-                  class="project__img"
+                  class="project__image"
                 />
               </div>
             </div>
 
-            <div class="project-box">
-              <div class="project__img__wrapper">
+            <div class="project-box transY-80 observe">
+              <div class="project__image-wrapper">
                 <img
                   src="/images/rememb-o-mock.png"
                   alt=""
-                  class="project__img"
+                  class="project__image"
                 />
               </div>
               <div class="project-box__info">
@@ -295,7 +433,7 @@
                   data.
                 </p>
 
-                <div class="project-box__links">
+                <div class="project-box__btns">
                   <a
                     href="https://bryturner.github.io/Map-a-Memory/"
                     target="_blank"
@@ -317,15 +455,15 @@
 
       <section id="about">
         <div class="about__container center-section">
-          <h2 class="about__heading secondary-heading">ABOUT ME</h2>
+          <h2 class="secondary-heading transY-30 observe">ABOUT ME</h2>
           <div class="about__text-container">
             <form id="about__length" class="about__length-control">
               <fieldset class="about__fieldset">
-                <legend class="about__legend">
+                <legend class="about__legend transY-30 observe">
                   How much would you like to know?
                 </legend>
                 <div class="about__length-options">
-                  <div class="about__option">
+                  <div class="about__option trans-scale-2">
                     <input
                       type="radio"
                       class="about__input"
@@ -335,7 +473,7 @@
                     />
                     <label for="length-least" class="about__label"></label>
                   </div>
-                  <div class="about__option">
+                  <div class="about__option trans-scale-2">
                     <input
                       type="radio"
                       class="about__input"
@@ -345,7 +483,7 @@
                     />
                     <label for="length-less" class="about__label"></label>
                   </div>
-                  <div class="about__option">
+                  <div class="about__option trans-scale-2">
                     <input
                       type="radio"
                       class="about__input"
@@ -356,7 +494,7 @@
                     />
                     <label for="length-default" class="about__label"></label>
                   </div>
-                  <div class="about__option">
+                  <div class="about__option trans-scale-2">
                     <input
                       type="radio"
                       class="about__input"
@@ -366,7 +504,7 @@
                     />
                     <label for="length-more" class="about__label"></label>
                   </div>
-                  <div class="about__option">
+                  <div class="about__option trans-scale-2">
                     <input
                       type="radio"
                       class="about__input"
@@ -376,14 +514,14 @@
                     />
                     <label for="length-most" class="about__label"></label>
                   </div>
-                  <p class="about__length-text">Less</p>
-                  <p class="about__length-text">More</p>
+                  <p class="about__length-text transY-30 observe">Less</p>
+                  <p class="about__length-text transY-30 observe">More</p>
                 </div>
               </fieldset>
             </form>
 
             <template id="about__texts">
-              <p data-length="least">
+              <p class="about__error" data-length="least">
                 An error has occurred. Please wait to be redirected...
               </p>
               <p data-length="less">
@@ -416,7 +554,7 @@
               </p>
             </template>
 
-            <p class="about__text">
+            <p class="about__text transY-30 observe">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
               esse facere, quasi error exercitationem, velit at consequatur
               numquam neque amet architecto debitis reiciendis, quam sed in
@@ -436,11 +574,14 @@
 
       <section id="contact">
         <div class="center-section">
-          <h2 class="contact__heading secondary-heading">CONTACT</h2>
+          <h2 class="secondary-heading transY-30 observe">CONTACT</h2>
           <div class="contact__container">
             <!-- action: email, method: post -->
             <form class="contact__form">
-              <label for="contact-name" class="contact__label">
+              <label
+                for="contact-name"
+                class="contact__label transY-30 observe"
+              >
                 <input
                   type="text"
                   id="contact-name"
@@ -449,7 +590,10 @@
                   required
                 />
               </label>
-              <label for="contact-email" class="contact__label">
+              <label
+                for="contact-email"
+                class="contact__label transY-30 observe"
+              >
                 <input
                   type="email"
                   id="contact-email"
@@ -458,7 +602,10 @@
                   required
                 />
               </label>
-              <label for="contact-message" class="contact__label">
+              <label
+                for="contact-message"
+                class="contact__label transY-30 observe"
+              >
                 <textarea
                   id="contact-message"
                   class="contact__input contact__textarea"
@@ -469,29 +616,43 @@
               </label>
               <button
                 type="submit"
-                class="btn btn-primary contact__btn contact__btn-email"
+                class="btn btn-primary contact__btn-email transY-30 observe"
               >
                 Send Email
               </button>
             </form>
-            <div class="contact__btns-container">
-              <p class="contact__text">
+            <div>
+              <p class="contact__text transY-30 observe">
                 Want to know more about my professional background and view some
                 of my code? Click below!
               </p>
-              <div class="contact__btns-grid">
-                <a href="#" class="btn btn-primary contact__btn" target="_blank"
-                  >Github</a
+              <div class="contact__btns-container">
+                <a
+                  href="https://github.com/bryturner"
+                  class="btn contact__btn transY-30 observe"
+                  target="_blank"
+                  ><img
+                    src="/images/github-icon.png"
+                    class="contact__icon"
+                    alt=""
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/bryanturnerdev/"
+                  class="btn contact__btn transY-30 observe"
+                  target="_blank"
                 >
-                <a href="#" class="btn btn-primary contact__btn" target="_blank"
-                  >LinkedIn</a
-                >
+                  <img
+                    src="/images/linkedin-icon.png"
+                    class="contact__icon"
+                    alt=""
+                  />
+                </a>
                 <a
                   href="/docs/Bryan_Turner-cv-10-7-22.pdf"
-                  class="btn btn-primary contact__btn"
+                  class="btn contact__btn transY-30 observe"
                   download="Bryan_Turner_CV"
-                  >Download Resume</a
-                >
+                  ><img src="/images/cv-icon.png" class="contact__icon" alt=""
+                /></a>
               </div>
             </div>
           </div>
