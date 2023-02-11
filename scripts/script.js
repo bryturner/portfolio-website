@@ -16,9 +16,9 @@ const shrinkHeader = () => {
 // Menu button animation
 const menuBtn = document.querySelector('.menu__btn');
 const headerId = document.getElementById('header');
+const menuBtnLines = document.querySelectorAll('.menu__btn-line');
 
 menuBtn.addEventListener('click', () => {
-  const menuBtnLines = document.querySelectorAll('.menu__btn-line');
   menuBtnLines.forEach(line => line.classList.toggle('close'));
   headerId.classList.toggle('show');
   document.body.classList.toggle('show');
@@ -33,6 +33,7 @@ navLinks.forEach(link => {
     const href = link.getAttribute('href');
 
     if (window.innerWidth <= 740) {
+      menuBtnLines.forEach(line => line.classList.remove('close'));
       document.body.classList.remove('show');
       headerId.classList.remove('show');
     }

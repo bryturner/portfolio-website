@@ -151,10 +151,6 @@ body {
   transform: scale(0.5);
 }
 
-.disp-none {
-  display: none;
-}
-
 /* ******* Header ******* */
 #header {
   height: 6.8rem;
@@ -578,107 +574,15 @@ body {
 
 .about__text {
   font-size: 1.8rem;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
+  line-height: 1.6;
 }
 
 .about__error {
   color: #ea2626;
 }
 
-/* .about__icon-container {
-  justify-content: center;
-  display: flex;
-  gap: 5rem;
-}
-
-.about__icon-link {
-  background-color: var(--color-primary);
-  width: 6rem;
-  height: 6rem;
-  padding: 1.2rem;
-  border-radius: 50%;
-  text-decoration: none;
-  transition: all 0.2s linear;
-}
-
-.about__icon-link:hover {
-  background-color: var(--color-primary-med);
-  opacity: 0.9;
-}
-
-.about__icon {
-  font-size: 3.6rem;
-  color: var(--color-white);
-} */
-
-.about__image-wrapper {
-  position: relative;
-  width: 400px;
-  justify-self: center;
-}
-
-.about__image {
-  width: 100%;
-  border-radius: 50%;
-  /* background-color: var(--color-secondary-light); */
-  background: rgb(94, 192, 229);
-  background: linear-gradient(
-    0deg,
-    rgba(94, 192, 229, 1) 0%,
-    rgba(232, 251, 247, 1) 42%
-  );
-}
-
 /* ******* Contact ******* */
-#contact {
-  background-color: var(--color-primary-lightest);
-  padding: var(--section-padding);
-}
-
-.contact__container {
-  display: grid;
-  grid-template-columns: 60fr 40fr;
-  gap: 6rem;
-  max-width: 100rem;
-  margin: 0 auto;
-}
-
-.contact__form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-
-.contact__input {
-  font-size: 1.6rem;
-  display: inline-block;
-  width: 100%;
-  padding: 1rem;
-  border: 2px solid var(--color-secondary-dark);
-  border-radius: var(--border-radius-5);
-}
-
-.contact__input:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px var(--color-secondary);
-}
-
-.contact__textarea {
-  font-family: inherit;
-  resize: none;
-}
-
-.contact__btn-email {
-  width: fit-content;
-  align-self: center;
-  font-size: 1.6rem;
-  padding: 0.8rem 5rem;
-}
-
-.contact__text {
-  font-size: 1.8rem;
-  margin: 1rem 0 3rem 0;
-}
 
 .contact__btns-container {
   display: flex;
