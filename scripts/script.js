@@ -1,14 +1,25 @@
 'use strict';
 
-// window.addEventListener('load', () => {
-//   document.body.style.display = 'block';
-// });
-
+// Loading animation
 window.addEventListener('load', () => {
   document.body.classList.remove('is-loading');
   const loading = document.getElementById('loading');
   loading.style.display = 'none';
 });
+
+// Lazy loading images
+const imageObserver = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !entry.target.src) {
+        entry.target.src = entry.target.dataset.src;
+      }
+    });
+  },
+  {
+    threshold: 1,
+  }
+);
 
 // Sticky navigation
 window.onscroll = () => {
