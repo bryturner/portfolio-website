@@ -578,8 +578,9 @@ body {
   line-height: 1.6;
 }
 
-.about__error {
-  color: #ea2626;
+.test p[data-length='least'] {
+  /* color: #ea2626; */
+  font-size: 4rem;
 }
 
 /* ******* Contact ******* */
