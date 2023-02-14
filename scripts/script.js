@@ -1,7 +1,13 @@
 'use strict';
 
+// window.addEventListener('load', () => {
+//   document.body.style.display = 'block';
+// });
+
 window.addEventListener('load', () => {
-  document.body.style.display = 'block';
+  document.body.classList.remove('is-loading');
+  const loading = document.getElementById('loading');
+  loading.style.display = 'none';
 });
 
 // Sticky navigation
