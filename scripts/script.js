@@ -1,5 +1,9 @@
 'use strict';
 
+window.addEventListener('load', () => {
+  document.body.style.display = 'block';
+});
+
 // Sticky navigation
 window.onscroll = () => {
   shrinkHeader();
@@ -66,10 +70,12 @@ aboutOptions.addEventListener('change', e => {
   aboutText.innerHTML = targetText.innerHTML;
 
   if (e.target.value === 'least') {
+    aboutText.style.color = '#ea2626';
     const aboutInputs = document.querySelectorAll('.about__input');
     aboutInputs.forEach(input => (input.disabled = true));
 
     setTimeout(() => {
+      aboutText.style.color = '#222';
       aboutText.innerHTML =
         aboutTexts.querySelector(`[data-length=most]`).innerHTML;
       aboutOptions.querySelector('#length-most').checked = true;
