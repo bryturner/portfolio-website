@@ -7,20 +7,6 @@ window.addEventListener('load', () => {
   loading.style.display = 'none';
 });
 
-// Lazy loading images
-const imageObserver = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !entry.target.src) {
-        entry.target.src = entry.target.dataset.src;
-      }
-    });
-  },
-  {
-    threshold: 1,
-  }
-);
-
 // Sticky navigation
 window.onscroll = () => {
   shrinkHeader();
