@@ -83,7 +83,7 @@ aboutOptions.addEventListener('change', e => {
         aboutTexts.querySelector(`[data-length=most]`).innerHTML;
       aboutOptions.querySelector('#length-most').checked = true;
       aboutInputs.forEach(input => (input.disabled = false));
-    }, 2000);
+    }, 3000);
   }
 });
 
